@@ -1,0 +1,201 @@
+#subscription {
+   margin-top: 260px;
+   padding-bottom: 120px;
+   overflow: hidden;
+   display: grid;
+   grid-template-columns: 46% 46%;
+   gap: 8%;
+   position: relative;
+
+   .subs__image {
+      img {
+         position: absolute;
+         top: 0;
+         left: -380px;
+         width: 1262px;
+         height: 1003px;
+      }
+   }
+
+   .subs__info {
+      width: 480px;
+      text-align: center;
+      margin-top: 150px;
+      z-index: 8;
+
+      .subs__topic {
+         h3 {
+            font-size: 47px;
+            font-weight: bold;
+         }
+         h4 {
+            margin-top: -10px;
+            color: #8a6dc7;
+            font-size: 46px;
+            font-weight: 400;
+            letter-spacing: 2.55px;
+         }
+         p {
+            margin: 15px 0 85px;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 29.63px;
+            letter-spacing: 0.5px;
+         }
+      }
+
+      .subs__form {
+         input, textarea {
+            width: 100%;
+            border: 3px solid #9172d1;
+            background-color: transparent;
+            padding: 1rem 1.5rem;
+            margin-bottom: 35px;
+
+            &::placeholder {
+               font-family: Krub;
+               font-size: 14px;
+               color: #6a6a6a;
+               font-weight: 400;
+               letter-spacing: 3.69px;
+            }
+         }
+      }
+
+      .btn-primary {
+         margin-top: 55px;
+      }
+   }
+}
+
+footer {
+   height: 720px;
+   background-color: #8c6eca;
+
+   .footer__content {
+      padding-top: 245px;
+      width: 92%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      .footer__left {
+         display: flex;
+         justify-content: space-between;
+         gap: 120px;
+
+         .footer__about {
+            h4 {
+               font-size: 33px;
+               font-weight: 700;
+               letter-spacing: 0.63px;
+               position: relative;
+               margin-bottom: 25px;
+
+               &::after {
+                  content: '';
+                  position: absolute;
+                  bottom: -10px;
+                  left: -2px;
+                  width: 100px;
+                  height: 2px;
+                  background-color: #e6e6e6;
+               }
+            }
+            p {
+               font-size: 24px;
+               font-weight: 400;
+               line-height: 40px;
+            }
+         }
+
+         .footer__what {
+            h4 {
+               font-size: 33px;
+               font-weight: 700;
+               letter-spacing: 0.63px;
+               position: relative;
+               margin-bottom: 25px;
+
+               &::after {
+                  content: '';
+                  position: absolute;
+                  bottom: -10px;
+                  left: -2px;
+                  width: 194px;
+                  height: 2px;
+                  background-color: #e6e6e6;
+               }
+            }
+            p {
+               font-size: 24px;
+               font-weight: 400;
+               line-height: 40px;
+            }
+         }
+      }
+
+      .footer__right {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-end;
+
+         h4 {
+            font-size: 33px;
+            font-weight: 700;
+            line-height: 48.93px;
+            text-align: right;
+            width: 302px;
+            position: relative;
+            margin-bottom: 25px;
+         
+            &::after {
+               content: '';
+               position: absolute;
+               bottom: 10px;
+               left: -2px;
+               width: 48px;
+               height: 2px;
+               background-color: #e6e6e6;
+            }
+         }
+
+         input {
+            margin-top: 20px;
+            width: 100%;
+            border: 3px solid #f1f1f1;
+            background-color: transparent;
+            padding: 1rem 1.5rem;
+            margin-bottom: 35px;
+            width: 498px;
+            height: 64px;
+         }
+
+         .footer__socials {
+            margin-top: 26px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+
+            p {
+               font-size: 25px;
+               font-weight: 500;
+               line-height: 33.33px;
+               text-align: right;
+            }
+
+            a {
+               background-color: #e6e6e6;
+               color: $primary-color;
+               text-align: center;
+               font-size: 1.6rem;
+               padding: 1.2rem;
+               display: flex;
+               border-radius: 50%;
+            }
+         }
+      }
+   }
+}

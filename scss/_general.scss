@@ -1,0 +1,47 @@
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: 'Krub', sans-serif;
+   line-height: 1.5;
+   color: $white-color;
+   background: $background-body;
+}
+
+.container {
+   width: $container-lg;
+   margin: 0 auto;
+}
+
+img {
+   display: block;
+   // width: 100%;      // gets width of it's parent 
+}
+
+h1, h2, h3, h4, h5 {
+   line-height: 1.2;
+}
+
+section {
+   margin-top: 6rem;
+}
+
+span {
+   color: $primary-color
+}
+
+.btn-primary {
+   @include button();
+}
+
+.image-top {
+   z-index: 9;
+}
+
+/* ======================== MEDIA QUERIES (MEDIUM DEVICES) ======================== */
+@media screen and (max-width: 1024px) {
+   .container {
+      width: $container-md;
+   }
+}
